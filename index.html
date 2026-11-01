@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Nayana Sree, Electronics and Communication Engineering student.">
-  <title>Nayana Sree | Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of Nayana Sree, ECE student.">
+  <title>Nayana Sree | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,36 +32,44 @@
   </header>
 
   <main>
-    <!-- Home -->
+
+    <!-- Home Section -->
     <section class="hero section" id="home">
       <div class="container hero-content">
+
         <div class="hero-text">
           <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+
           <h1>Hi, I'm <span>Nayana Sree</span></h1>
+
           <h2>Electronics & Communication Engineering Student</h2>
+
           <p>
             I enjoy exploring technology, building practical projects,
             and learning new skills in electronics and software.
           </p>
+
           <div class="hero-buttons">
             <a href="#projects" class="btn primary-btn">Explore My Work</a>
             <a href="#contact" class="btn outline-btn">Contact Me</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Portfolio initials illustration">
+        <div class="hero-visual">
           <div class="profile-circle">
             <span>NS</span>
           </div>
           <div class="floating-card card-one">💻 Web Projects</div>
           <div class="floating-card card-two">⚡ Electronics</div>
         </div>
+
       </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section class="section" id="about">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow">GET TO KNOW ME</p>
           <h2>About <span>Me</span></h2>
@@ -74,81 +82,96 @@
             for Women. I am interested in electronics, programming,
             embedded systems, and web development.
           </p>
+
           <p>
             I enjoy learning through hands-on projects and exploring
             how technology can solve real-world problems. I have also
             worked on academic projects involving robotics and automation.
           </p>
+
           <p>
             Currently, I am preparing for GATE and continuously improving
             my technical and problem-solving skills.
           </p>
         </div>
+
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section class="section alternate" id="skills">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow">WHAT I WORK WITH</p>
           <h2>My <span>Skills</span></h2>
         </div>
 
         <div class="skills-grid">
+
           <div class="skill-card">
             <span>🐍</span>
             <h3>Python</h3>
             <p>Programming basics</p>
           </div>
+
           <div class="skill-card">
             <span>💻</span>
             <h3>C Programming</h3>
             <p>Programming fundamentals</p>
           </div>
+
           <div class="skill-card">
             <span>☕</span>
             <h3>Java</h3>
             <p>Basic concepts</p>
           </div>
+
           <div class="skill-card">
             <span>🗄️</span>
             <h3>DBMS</h3>
             <p>Database fundamentals</p>
           </div>
+
           <div class="skill-card">
             <span>🔌</span>
             <h3>Electronics</h3>
             <p>Electronic devices and circuits</p>
           </div>
+
           <div class="skill-card">
             <span>🤖</span>
             <h3>AI Tools</h3>
             <p>ChatGPT and GitHub tools</p>
           </div>
+
           <div class="skill-card">
             <span>📊</span>
             <h3>MS Office</h3>
             <p>Word, Excel and PowerPoint</p>
           </div>
+
           <div class="skill-card">
             <span>🧪</span>
             <h3>MATLAB</h3>
             <p>Academic simulation practice</p>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section class="section" id="projects">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow">SOME THINGS I'VE BUILT</p>
           <h2>My <span>Projects</span></h2>
         </div>
 
         <div class="projects-grid">
+
           <article class="project-card">
             <div class="project-icon">🤖</div>
             <h3>Autonomous Line Following Robot</h3>
@@ -188,19 +211,22 @@
             </p>
             <span class="project-tag">HTML • CSS • JavaScript</span>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- Education -->
+    <!-- Education Section -->
     <section class="section alternate" id="education">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow">MY ACADEMIC JOURNEY</p>
           <h2>Education & <span>Experience</span></h2>
         </div>
 
         <div class="timeline">
+
           <article class="timeline-item">
             <span class="timeline-dot"></span>
             <div>
@@ -225,16 +251,18 @@
             <div>
               <p class="timeline-date">Internship</p>
               <h3>Web Development – Veda Technologies</h3>
-              <p>Hands-on practice through daily web development tasks.</p>
+              <p>Hands-on practice through web development tasks.</p>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section class="section" id="contact">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow">LET'S CONNECT</p>
           <h2>Contact <span>Me</span></h2>
@@ -243,23 +271,56 @@
         <div class="contact-card">
           <p>
             Interested in connecting or discussing technology and projects?
-            Feel free to reach out.
+            Send me a message.
           </p>
+
+          <form id="contactForm" class="contact-form" novalidate>
+
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName"
+              placeholder="Enter your name">
+            <small class="form-error" id="nameError"></small>
+
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail"
+              placeholder="Enter your email">
+            <small class="form-error" id="emailError"></small>
+
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="4"
+              placeholder="Write your message"></textarea>
+            <small class="form-error" id="messageError"></small>
+
+            <button type="submit" class="btn primary-btn">
+              Send Message
+            </button>
+
+            <p id="formStatus" role="status" aria-live="polite"></p>
+
+          </form>
 
           <div class="contact-links">
             <a href="mailto:y.nayanasree@gmail.com">✉ Email Me</a>
+
             <a href="https://www.linkedin.com/in/nayana-s-834160293/"
-               target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
             <a href="https://github.com/y-nayanasree"
-               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <p>© <span id="year"></span> Nayana Sree. Built with HTML, CSS & JavaScript.</p>
+    <p>
+      © <span id="year"></span> Nayana Sree.
+      Built with HTML, CSS & JavaScript.
+    </p>
   </footer>
 
   <script src="script.js"></script>
